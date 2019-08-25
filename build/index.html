@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>It Svit Test</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+	<link rel="shortcut icon" href="fav.png" type="image/x-icon">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+	<h1 class="visually-hidden" >this is first heading</h1>
+	<section>
+		<div class="container">
+			<div class="flex-container">
+				<div class="main">				
+					<div class="main-description">
+						<div class="candidate-description">
+							<h2 class="candidate-position">
+								Junior PHP разработчик
+							</h2>
+							<p class="candidate-representative">
+								Kate Middleton, 
+								<span>
+									IT Svit Corporation
+								</span>
+							</p>
+							<div class="candidate-location">
+								<img src="images/point.png" alt="point">
+								<p>Каменец-Подольский</p>
+							</div>
+							<div class="candidate-skills">
+								<div class="skills">
+									<img src="images/ok.png" alt="ok">
+									<p>Analytical skill</p>
+								</div>
+								<div class="skills">
+									<img src="images/ok.png" alt="ok">
+									<p>Linkedin</p>
+								</div>
+								<div class="skills">
+									<img src="images/ok.png" alt="ok">
+									<p>Laravel</p>
+								</div>
+							</div>
+							<div class="about-candidate">
+								<p>
+									IT Svit, one of the leaders of Ukrainian IT outsourcing market is looking for an open-minded and ambitious person with organizational skills to fill the position of Marketing Lead to help the team further expand our presence on the market.
+								</p>
+							</div>
+							<div class="aditional">
+								<button class="add-btn" >
+									Добавить навыки
+								</button>
+								<div class="switcher">
+									<label class="switch">
+		  								<input type="checkbox">
+		  								<span class="slider round"></span>
+									</label>								
+								</div>
+								<p>Активная вакансия</p>
+							</div>
+							<!-- modal -->
+							<div class="modal-overlay">
+							  <div class="modal">
+							    
+							    <a class="close-modal">
+							      <svg viewBox="0 0 20 20">
+							        <path fill="#000000" d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z"></path>
+							      </svg>
+							    </a><!-- close modal -->
+
+							    <div class="modal-content">
+							    	<div class="added-skills">
+									     <h3 class="modal-tagline">
+									     	Добавление навыков
+									     </h3>
+									     <p class="already-added">Добавленные</p>
+									     <div class="candidate-skills">
+											<div class="skills">
+												<img src="images/ok.png" alt="ok">
+												<p>Analytical skill</p>
+											</div>
+											<div class="skills">
+												<img src="images/ok.png" alt="ok">
+												<p>Linkedin</p>
+											</div>
+											<div class="skills">
+												<img src="images/ok.png" alt="ok">
+												<p>Laravel</p>
+											</div>
+										</div>
+
+
+									</div>
+									<div class="new-skills">
+										<div class="candidate-skills">
+											<div class="skills">			
+												<p>Skill 1</p>
+											</div>
+											<div class="skills">			
+												<p>Skill 2</p>
+											</div>						
+										</div>
+										<div class="apply-skills">
+											<button class="apply-btn">
+												Применить
+											</button>
+											<button class="decline-btn">
+												Отмена
+											</button>
+										</div>
+									</div>
+
+							    </div><!-- content -->
+							    
+							  </div><!-- modal -->
+							</div><!-- overlay -->
+
+
+						</div>
+						<div class="rate-candidate">
+							<div class="foto-candidate">
+								<img src="images/f.png" alt="candidate foto">
+							</div>
+							<p class="salary-candidate">
+								$3000
+							</p>
+							<p class="creation-date">
+								20 Фев 2017
+							</p>
+						</div>
+					</div>
+					<div class="flex-wrapper">
+						<div class="actual-candidats" id="scroll">
+							<ul class="candidat-list">
+								<li class="candidat-list-item candidat-list-item__new"><a href="#" class="item-link"><span class="new"></span>PHP разработчик, Laravel</a></li>
+								<li class="candidat-list-item candidat-list-item__new"><a href="#" class="item-link"><span class="new"></span>Junior PHP разработчик</a></li>
+								<li class="candidat-list-item"><a href="#" class="item-link"><span class="not-active"></span>Senior PHP</a></li>
+								<li class="candidat-list-item"><a href="#" class="item-link"><span class="not-active"></span>Junior PHP разработчик</a></li>
+								<li class="candidat-list-item"><a href="#" class="item-link"><span class="not-active"></span>PHP разработчик</a></li>
+								<li class="candidat-list-item candidat-list-item__deleted "><a href="#" class="item-link"><span class="not-active"></span>разработчик PHP</a></li>
+								<li class="candidat-list-item"><a href="#" class="item-link"><span class="not-active"></span>Junior PHP разработчик</a></li>
+								<li class="candidat-list-item"><a href="#" class="item-link"><span class="not-active"></span>Senior PHP</a></li>
+								<li class="candidat-list-item"><a href="#" class="item-link"><span class="not-active"></span>Junior PHP разработчик</a></li>
+								<li class="candidat-list-item"><a href="#" class="item-link"><span class="not-active"></span>PHP разработчик</a></li>
+								<li class="candidat-list-item"><a href="#" class="item-link"><span class="not-active"></span>разработчик PHP</a></li>
+								<li class="candidat-list-item"><a href="#" class="item-link"><span class="not-active"></span>Junior PHP разработчик</a></li>
+								<li class="candidat-list-item"><a href="#" class="item-link"><span class="not-active"></span>Senior PHP</a></li>
+								<li class="candidat-list-item"><a href="#" class="item-link"><span class="not-active"></span>Junior PHP разработчик</a></li>
+								<li class="candidat-list-item"><a href="#" class="item-link"><span class="not-active"></span>PHP разработчик</a></li>
+								<li class="candidat-list-item candidat-list-item__deleted "><a href="#" class="item-link"><span class="not-active"></span>разработчик PHP</a></li>
+								<li class="candidat-list-item"><a href="#" class="item-link"><span class="not-active"></span>Junior PHP разработчик</a></li>
+								<li class="candidat-list-item"><a href="#" class="item-link"><span class="not-active"></span>Senior PHP</a></li>
+								<li class="candidat-list-item"><a href="#" class="item-link"><span class="not-active"></span>Junior PHP разработчик</a></li>
+								<li class="candidat-list-item"><a href="#" class="item-link"><span class="not-active"></span>PHP разработчик</a></li>
+								<li class="candidat-list-item"><a href="#" class="item-link"><span class="not-active"></span>разработчик PHP</a></li>
+								<li class="candidat-list-item"><a href="#" class="item-link"><span class="not-active"></span>Junior PHP разработчик</a></li>
+							</ul>
+						</div>
+						<div class="chat">
+							<div class="chating-candidat">
+								<div class="about-chat-candidat">
+									<h3 class="chat-tagline">
+										Junior PHP разработчик
+									</h3>
+									<p>
+									<img src="images/point.png" alt="point">
+									Каменец-Подольский <span>7 лет опыта</span></p>
+								</div>
+								<div class="about-chat-info">
+									<p class="salary">$1200</p>
+									<p class="date">20 Фев 2017</p>
+								</div>
+							</div>
+							<div class="chat-user" id="chat-scroll">
+								<div class="chat-with">
+									<p class="name-user">
+										Вы
+									</p>
+									<p class="user-message">
+										I have just come across your profile on LinkedIn and thought your profile looks very interesting to Sales manager position that we are working on at the moment.   This position is at a leading FinTech company from London, which has an office in Kharkiv.  Would you be interested in hearing more about this opportunity? 
+									</p>
+									<p class="sent-date">					
+										13:32, 20 Фев 2017
+									</p>
+								</div>
+								<div class="chat-yours">
+									<p class="name-user your-name">
+										Junior PHP разработчик
+									</p>
+									<p class="user-message your-massage">
+										Hello. Yes I want to hear more information about this position.
+										Yes I wantHello. Yes I want to hear more information about this position. to hear more information about this position. 
+									</p>
+									<p class="sent-date your-date">					
+										13:32, 20 Фев 2017
+									</p>
+								</div>
+								<div class="chat-with">
+									<p class="name-user">
+										Вы
+									</p>
+									<p class="user-message">
+										I have just come across your profile on LinkedIn and thought your profile looks very interesting to Sales manager position that we are working on at the moment.   This position is at a leading FinTech company from London, which has an office in Kharkiv.  Would you be interested in hearing more about this opportunity? 
+									</p>
+									<p class="sent-date">					
+										13:32, 20 Фев 2017
+									</p>
+								</div>
+								<div class="chat-yours">
+									<p class="name-user your-name">
+										Junior PHP разработчик
+									</p>
+									<p class="user-message your-massage">
+										Hello. Yes I want to hear more information about this position.
+										Yes I wantHello. Yes I want to hear more information about this position. to hear more information about this position. 
+									</p>
+									<p class="sent-date your-date">					
+										13:32, 20 Фев 2017
+									</p>
+								</div>
+
+							</div>
+							<div class="chatting-form">
+								<form action="" method="">
+									<textarea name="" id="message" placeholder="Введите сообщение"></textarea>
+									<button class="send-btn" >Отправить</button>
+									<a href="#" target="blank">Жалоба</a>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+					
+			
+			<div class="vacancy">
+					<ul class="vacancy-list">
+						<li class="vacancy-list-item vacancy-list-item__heading">Мои вакансии</li>
+						<li class="vacancy-list-item"><a href="#">Дизайнер интерьера, помощник дизайнера</a><span>12</span></li>
+						<li class="vacancy-list-item"><a href="#">WordPress Developer</a><span>2</span></li>
+						<li class="vacancy-list-item"><a href="#">Junior PHP разработчик</a><span>2</span></li>
+						<li class="vacancy-list-item"><a href="#">Бармен на круизный лайнер</a></li>
+						<li class="vacancy-list-item"><a href="#">Инструктор-спасатель в Аквапарк</a></li>
+					</ul>
+			</div>
+		</div>
+
+		
+
+		</div>
+
+
+
+
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" ></script>
+	 <script src="js/app.js" ></script>
+    <script src="js/ajax.js" ></script>
+</body>
+</html>
